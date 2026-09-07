@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critter Example</title>
+
+    <style>
+        .face {
+            width: 75px;
+            height: 75px;
+            border: solid 2px black;
+            border-radius: 50px;
+            background-color: yellow;
+            position: absolute;
+        }
+
+        .lefteye {
+            width: 6px;
+            height: 6px;
+            border: solid 1px black;
+            border-radius: 3px;
+            z-index: 1;
+            position: absolute;
+            left: 32px;
+            top: 26px;
+            background-color: black;
+        }
+
+        .innereye {
+            width: 2px;
+            height: 2px;
+            border: solid 1px white;
+            border-radius: 2px;
+            z-index: 1;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            background-color: white;
+        }
+
+        .righteye {
+            width: 6px;
+
+            height: 6px;
+
+            border: solid 1px black;
+
+            border-radius: 3px;
+
+            z-index: 1;
+
+            position: absolute;
+
+            left: 54px;
+
+            top: 18px;
+
+            background-color: black;
+        }
+
+        .mouth {
+            width: 30px;
+
+            height: 10px;
+
+            border: solid 1px black;
+
+            border-radius: 0 0 45px 45px;
+
+            margin: 16px;
+
+            position: absolute;
+
+            top: 2em;
+
+            left: 1em;
+
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Geographic Dividers-->
+
+    <div class="wrapper">
+        <h1>Smiley Critter</h1>
+
+        <div class="face">
+
+            <div class="lefteye">
+
+                <div class="innereye"> </div>
+
+            </div>
+
+            <div class="righteye">
+
+                <div class="innereye"></div>
+
+            </div>
+
+            <div class="mouth"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
