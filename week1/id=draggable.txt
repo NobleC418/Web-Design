@@ -1,0 +1,80 @@
+id="draggable"
+ 
+#draggable {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: move;       /* Shows a drag cursor to the user */
+
+  user-select: none;  /* Prevents text highlighting while dragging */
+
+}
+ 
+ 
+ 
+const dragItem = document.getElementById("draggable");
+ 
+let offsetX = 0;
+
+let offsetY = 0;
+
+let isDragging = false;
+ 
+// 1. Triggered when the user presses the mouse button down on the element
+
+dragItem.addEventListener("mousedown", (e) => {
+
+  isDragging = true;
+
+  // Calculate the cursor's distance from the top-left corner of the element
+
+  offsetX = e.clientX - dragItem.offsetLeft;
+
+  offsetY = e.clientY - dragItem.offsetTop;
+ 
+  // Attach listeners to window so dragging stays smooth if the mouse moves fast
+
+  window.addEventListener("mousemove", mouseMoveHandler);
+
+  window.addEventListener("mouseup", mouseUpHandler);
+
+});
+ 
+// 2. Triggered continuously as the mouse moves
+
+function mouseMoveHandler(e) {
+
+  if (!isDragging) return;
+ 
+  // Calculate new position relative to the viewport
+
+  let newX = e.clientX - offsetX;
+
+  let newY = e.clientY - offsetY;
+ 
+  // Update the element's style positions
+
+  dragItem.style.left = `${newX}px`;
+
+  dragItem.style.top = `${newY}px`;
+
+}
+ 
+// 3. Triggered when the user releases the mouse button
+
+function mouseUpHandler() {
+
+  isDragging = false;
+
+  // Clean up event listeners to save memory and performance
+
+  window.removeEventListener("mousemove", mouseMoveHandler);
+
+  window.removeEventListener("mouseup", mouseUpHandler);
+
+}
+ 
