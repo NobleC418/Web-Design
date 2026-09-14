@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: Constructing a web page framework(Holy Grail Layout)</title>
+    <title>Lab, Holy Grail Layout</title>
 
     <style>
         header {
@@ -114,25 +114,25 @@
 </head>
 
 <body>
-    <header><p>The header does not have any positioning applied, therefore assumes the defaul - which is static. Offset properties like top or left won't work on it.</p></header>
+    <header>The header does not have any positioning applied, therefore assumes the defaul - which is static. Offset properties like top or left won't work on it.</header>
 
-    <nav><P>It's removed from the normal layout flow and pinned directly to the screen. The settings top: 170px and left: 35px lock it 170px down and 35px right from the top-left corner of the browser window, which stays in place even when you scroll</P></nav>
+    <nav>It's removed from the normal layout flow and pinned directly to the screen. The settings top: 170px and left: 35px lock it 170px down and 35px right from the top-left corner of the browser window, which stays in place even when you scroll</nav>
 
     <div>
 
         <div class="articles">
 
-            <article><p>It stays in the normal spot inside its container, but top: 15px shifts it 15px downward without messing up the layout around it.</p></article>
+            <article>It stays in the normal spot inside its container, but top: 15px shifts it 15px downward without messing up the layout around it.</article>
 
-            <article><p>Relative. Works like the first article-top: 15px pushes it 15px down from its natural position directly under the first article</p></article>
+            <article>Relative. Works like the first article-top: 15px pushes it 15px down from its natural position directly under the first article</article>
 
         </div>
 
-        <aside><p>It's completely pulled out of the normal layout flow. top: 235px and left: 50% place its top edge 235px down from the top of the page and align its left side exactly at the halfway mark(50%) of the screen</p></aside>
+        <aside>It's completely pulled out of the normal layout flow. top: 235px and left: 50% place its top edge 235px down from the top of the page and align its left side exactly at the halfway mark(50%) of the screen</aside>
 
     </div>
 
-    <footer> <p>Its pulled out of the layout flow and pinned to the screen. bottom: 0px anchors it directly to the bottom of the viewport so it never moves when you scroll</p></footer>
+    <footer>Its pulled out of the layout flow and pinned to the screen. bottom: 0px anchors it directly to the bottom of the viewport so it never moves when you scroll</footer>
 </body>
 
 </html>
