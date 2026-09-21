@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Using CSS</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            border-bottom: 2px solid black;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            top: 0px;
+            right: 0px;
+            background-color: black;
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            height: 800px;
+            background-color: grey;
+            padding-top: 80px;
+            box-sizing: border-box;
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            margin: 20px;
+        }
+
+        footer {
+            height: 80px;
+            width: 100%;
+            background-color: white;
+            border-top: 2px black;
+        }
+        
+        footer h1{
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav></nav>
+
+    <div class="logo">
+        <p>Logo Here</p>
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <footer>
+        <h1>Copyright Current Year</h1>
+    </footer>
+</body>
+
+</html>
