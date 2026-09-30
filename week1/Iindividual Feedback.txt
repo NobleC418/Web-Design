@@ -1,0 +1,18 @@
+        1. What tasks did you outline for yourself, as you planned this project?
+
+I outlined the design skeleton(yellow edge of the card, the color palette, etc) and the contents of the card itself(the element, the attack, weakness, origin of pokemon, etc)
+ 
+
+        2. How long did it take you to complete the project? Did you work on the project every day?
+
+It took me over a week where I didn't work on it everyday but on the days I worked on it, I made sure to put a good amount of time into it. Going as far as two hours
+ 
+
+        3. Did you encounter any difficulties as you completed the project?
+
+Figuring out what color palettes fit well with the overall design and the positioning of certain things.
+
+ 
+
+        4. Do you have any additional feedback? If so, add this here.
+
