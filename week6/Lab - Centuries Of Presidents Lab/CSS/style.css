@@ -1,9 +1,11 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-    height: 150%;
+html,body {
+    height: 100%;
     background-color: white;
 }
 
@@ -34,8 +36,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6{
     margin-bottom: 16px;
     color: white;
 }
@@ -58,6 +59,11 @@ header {
     font-family: Times, "Times New Roman", Georgia, serif;
     font-size: 2em;
     padding-top: 10px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
 }
 
 .flag-icon{
@@ -96,11 +102,13 @@ aside {
 }
 
 footer {
+position: absolute;
+    top: 660px; 
+    left: 0;
     width: 100%;
     height: 40px;
     background-color: rgb(41, 98, 211);
     color: white;
-    position: absolute;
-    bottom: 0px;
+    padding: 10px 15px;
 }
 
