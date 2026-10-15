@@ -1,0 +1,18 @@
+.ring {
+    width: 120px;
+    height: 120px;
+    border: 12px solid green;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.one {
+    top: 50px;
+    left: 50px;
+}
+
+.two {
+    top: 80px;
+    left: 110px;
+}
