@@ -1,38 +1,135 @@
-body{
-    background-color:burlywood;
+body {
+    background-color: burlywood;
 }
+
 
 .I_pattern {
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 0;
     background-image: url(../IUPUI.png);
     background-size: contain;
     background-repeat: no-repeat;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-name: I;
     animation-iteration-count: infinite;
 }
 
+
+
 @keyframes I {
-    0%{
-        left: 0%;
-    }
-    20%{
-        left: 80%;
-    }
-    40%{
-        left: 50%;
-    }
-    60%{
-        top: 50%;
-    }
-    80%{
-        left: 0%;
-    }
-    100%{
-        left: 80%;
+    0% {
+        left: 0px;
+        top: 0px;
     }
 
+
+    10% {
+        left: 700px;
+        top: 0px;
+    }
+
+    20% {
+        left: 350px;
+        top: 0px;
+    }
+
+    30% {
+        left: 350px;
+        top: 750px;
+    }
+
+    40% {
+        left: 0px;
+        top: 750px;
+    }
+
+    50% {
+        left: 700px;
+        top: 750px;
+    }
+
+    60% {
+        left: 350px;
+        top: 750px;
+    }
+
+    70% {
+        left: 350px;
+        top: 0px;
+    }
+
+    80% {
+        left: 700px;
+        top: 0px;
+    }
+
+    90% {
+        left: 350px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.U_pattern {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../IUPUI.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-name: U;
+    animation-iteration-count: infinite;
+}
+
+@keyframes U{
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+
+    20%{
+        left: 0px;
+        top: 700px;
+    }
+
+    40%{
+        left: 150px;
+        top: 750px;
+    }
+
+    60%{
+        left: 650px;
+        top: 750px;
+    }
+
+    80%{
+        left: 700px;
+        top: 700px;
+    }
+
+    100%{
+        left: 700px;
+        top: 0px;
+    }
+}
+
+
+.inner {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100px;
+    left: 350px;
+    background-color: white;
+    border-radius: 20px;
+    border: 8px solid maroon;
+    padding: 10px;
+    box-shadow: 7px 10px;
 }
