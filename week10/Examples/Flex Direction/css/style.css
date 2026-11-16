@@ -1,0 +1,86 @@
+/* Flex Direction - Row  
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - Column  
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - Column Reverse 
+.wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - Row  Reverse 
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - wrap
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - no-wrap
+.wrapper {
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+*/
+
+/* Flex Direction - wrap-reverse*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+}
+
+
+article {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.obvious {
+    font-size: xx-large;
+    color: yellow;
+}
